@@ -68,6 +68,8 @@ public class HerokuApplication {
         output.add("Read from DB: " + rs.getTimestamp("tick") + " " + rs.getString("random_string"));
       }
 
+      System.out.println("Robert Ceriani");
+
       model.put("records", output);
       return "db";
     } catch (Exception e) {
